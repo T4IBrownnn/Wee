@@ -1,0 +1,81 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background-color: e;
+}
+/*header style*/
+header {
+    text-align: center; 
+    padding: 20px;
+    background-color: aliceblue;
+    color: aliceblue;
+ }
+/*navigation bar style*/
+nav {
+   text-align: center;
+   word-spacing: 30px;
+   padding: 10px;
+   background-color: #f5f5dc;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}   
+/*navigation bar button style*/
+nav a {
+   color: #000000;
+   text-decoration: none;
+   font-size: larger;
+}
+ .row {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .post-text-box {
+    flex: 70%;
+    padding: 20px;
+ }
+ .profile {
+    flex: 70%;
+    padding: 20px;
+    justify-content: center;
+ }
+ /*profile image and heading style*/
+ .profile img {
+    width: 120px;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+ }
+ .profile h1 {
+    text-align: center;
+ }
+ .flex-container {
+   background-color: rgba(64, 255, 0, 0.471);
+   padding: 10px;
+}
+.flex-item {
+   width: 20px;
+   height: 20px;
+   background-color: #000;
+   margin: 5px;
+}
+div.gallery {
+   margin: 5px;
+   border: 1px solid #ccc;
+   float: left;
+   width: 180px;
+ }
+ 
+ div.gallery:hover {
+   border: 1px solid #777;
+ }
+ 
+ div.gallery img {
+   width: 100%;
+   height: auto;
+ }
+ 
+ div.desc {
+   padding: 15px;
+   text-align: center;
+ }
+ 
