@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 20px;
+
+}
+
+.trigger {
+    display: none;
+}
+
+.hamburger {
+    cursor: pointer;
+    margin-right: 10px;
+    float: left;
+
+    span {
+        height: 3px;
+        width: 30px;
+        background: black;
+        display: black;
+        margin-bottom: 5px;
+        position: relative;
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, 
+        opacity 0.3s ease-in-out;
+
+
+        .trigger:checked ~ &:first-child {
+         transform: rotate(45deg);
+         top: 8px;
+         position: relative;
+        }
+
+        .trigger:checked ~ &:last-child {
+            transform: rotate(-45deg);
+            top: -8px;
+            position: relative;
+        }
+
+        .trigger:checked ~ &:nth-child(2) {
+            opacity: 0;
+        }
+    }
+}
+
+.menu {
+    cursor: pointer;
+}
+
+
+
+nav {
+    background: #1ecbe1 ;
+    width: 100vw;
+    padding: 30px 70px;
+    margin-top: 10px;
+    position: absolute;
+    left: -100vw;
+    box-sizing: border-box;
+    transition: left 0.3s ease-in-out;
+
+    .trigger:checked ~ & {
+        left: 0;
+    }
+
+    ul {
+        list-style-type:  none;
+        margin: 0;
+        padding: 0;
+    }
+}
